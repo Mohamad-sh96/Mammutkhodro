@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماموت خودرو کرمانشاه | Mammut Khodro Kermanshah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body class="light-mode">
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <div class="logo-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1 class="logo-title" id="logo-title">ماموت خودرو</h1>
+                        <p class="logo-subtitle" id="logo-subtitle">نمایندگی کرمانشاه</p>
+                    </div>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active" data-key="nav.home">خانه</a></li>
+                    <li><a href="#cars" class="nav-link" data-key="nav.cars">خودروها</a></li>
+                    <li><a href="#services" class="nav-link" data-key="nav.services">خدمات</a></li>
+                    <li><a href="#about" class="nav-link" data-key="nav.about">درباره ما</a></li>
+                    <li><a href="#contact" class="nav-link" data-key="nav.contact">تماس با ما</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="تغییر حالت رنگ">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    
+                    <div class="language-switcher">
+                        <button id="lang-fa" class="lang-btn active" data-lang="fa">فارسی</button>
+                        <button id="lang-en" class="lang-btn" data-lang="en">English</button>
+                    </div>
+                    
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title" data-key="hero.title">نمایندگی رسمی ماموت خودرو در کرمانشاه</h2>
+                    <p class="hero-desc" data-key="hero.desc">با بیش از ۱۵ سال تجربه در ارائه بهترین خودروها و خدمات پس از فروش در غرب کشور</p>
+                    <div class="hero-actions">
+                        <a href="#cars" class="btn btn-primary" data-key="hero.btnCars">مشاهده خودروها</a>
+                        <a href="#contact" class="btn btn-outline" data-key="hero.btnContact">تماس با ما</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="car-slider">
+                        <div class="car-slide active">
+                            <div class="slide-image-container">
+                                <img src="assets/Troc.jpg" alt="فولکس واگن T-ROC" class="car-image">
+                                <h3 data-key="cars.car1.name"> فولکس واگن T-ROC</h3>
+                                <p data-key="cars.car1.desc">لذت رانندگی با جدیدترین مدل سال</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-slider">
+                        <div class="car-slide active">
+                            <div class="slide-image-container">
+                                <img src="assets/volkswagen-id4.jpg" alt="ID.4" class="car-image">
+                                <h3 data-key="cars.car1.name"> Volkswagen ID.4</h3>
+                                <p data-key="cars.car1.desc">لذت رانندگی با جدیدترین مدل سال</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-slider">
+                        <div class="car-slide active">
+                            <div class="slide-image-container">
+                                <img src="assets/volkswagen-id-unix_12-1220x684.jpg" alt="ID.Unix" class="car-image">
+                                <h3 data-key="cars.car1.name"> ID.Unix</h3>
+                                <p data-key="cars.car1.desc">لذت رانندگی با جدیدترین مدل سال</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-prev"><i class="fas fa-chevron-right"></i></button>
+                        <button class="slider-next"><i class="fas fa-chevron-left"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="section cars-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="cars.title">خودروهای موجود</h2>
+                <p class="section-desc" data-key="cars.desc">جدیدترین مدل‌های ماموت خودرو با بهترین قیمت و شرایط</p>
+            </div>
+            
+            <div class="cars-grid">
+                <div class="car-card">
+                    <div class="car-card-header">
+                        <div class="car-image-placeholder">
+                            <i class="fas fa-car-side"></i>
+                            <img src="assets/Troc.jpg" alt="فولکس واگن T-ROC" class="car-image">
+                        </div>
+                        <span class="car-badge" data-key="cars.badge.new">جدید</span>
+                    </div>
+                    <div class="car-card-body">
+                        <h3 class="car-name" data-key="cars.car1.name"> فولکس واگن T-ROC</h3>
+                        <p class="car-desc" data-key="cars.car1.fullDesc">خودروی شاسی بلند لوکس با امکانات کامل و مصرف سوخت بهینه</p>
+                        <div class="car-specs">
+                            <div class="spec">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>6.1 لیتر</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-cogs"></i>
+                                <span data-key="cars.specs.automatic">اتوماتیک</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-users"></i>
+                                <span>۵ نفره</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card-footer">
+                        <div class="car-price">
+                            <span class="price" data-key="cars.price.start">از</span>
+                            <span class="price-value">۲,۸۹۰,۰۰۰,۰۰۰</span>
+                            <span class="price-currency" data-key="currency.toman">تومان</span>
+                        </div>
+                        <button class="btn btn-small" data-key="cars.btnDetails">جزئیات بیشتر</button>
+                    </div>
+                </div>
+                
+                <div class="car-card">
+                    <div class="car-card-header">
+                        <div class="car-image-placeholder">
+                            <i class="fas fa-truck-pickup"></i>
+                            <img src="assets/volkswagen-id4.jpg" alt="فولکس واگن T-ROC" class="car-image">
+                        </div>
+                        <span class="car-badge" data-key="cars.badge.popular">پرطرفدار</span>
+                    </div>
+                    <div class="car-card-body">
+                        <h3 class="car-name" data-key="cars.car2.name"> فولکس واگن ID.4</h3>
+                        <p class="car-desc" data-key="cars.car2.fullDesc">وانت قدرتمند و بادوام برای کارهای سنگین و مسیرهای ناهموار</p>
+                        <div class="car-specs">
+                            <div class="spec">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>۹.۲ لیتر</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-cogs"></i>
+                                <span data-key="cars.specs.manual">دستی</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-users"></i>
+                                <span>۲ نفره</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card-footer">
+                        <div class="car-price">
+                            <span class="price" data-key="cars.price.start">از</span>
+                            <span class="price-value">۱,۹۵۰,۰۰۰,۰۰۰</span>
+                            <span class="price-currency" data-key="currency.toman">تومان</span>
+                        </div>
+                        <button class="btn btn-small" data-key="cars.btnDetails">جزئیات بیشتر</button>
+                    </div>
+                </div>
+                
+                <div class="car-card">
+                    <div class="car-card-header">
+                        <div class="car-image-placeholder">
+                            <i class="fas fa-suv"></i>
+                            <img src="assets/volkswagen-id-unix_12-1220x684.jpg" alt="فولکس واگن ID. Unix" class="car-image">
+                        </div>
+                        <span class="car-badge" data-key="cars.badge.popular">خاص</span>
+                    </div>
+                    <div class="car-card-body">
+                        <h3 class="car-name" data-key="cars.car3.name"> فولکس واگن ID. Unix</h3>
+                        <p class="car-desc" data-key="cars.car3.fullDesc">سدان خانوادگی اقتصادی با طراحی مدرن و فضای داخلی وسیع</p>
+                        <div class="car-specs">
+                            <div class="spec">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>۶.۸ لیتر</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-cogs"></i>
+                                <span data-key="cars.specs.automatic">اتوماتیک</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-users"></i>
+                                <span>۵ نفره</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card-footer">
+                        <div class="car-price">
+                            <span class="price" data-key="cars.price.start">از</span>
+                            <span class="price-value">۲,۱۵۰,۰۰۰,۰۰۰</span>
+                            <span class="price-currency" data-key="currency.toman">تومان</span>
+                        </div>
+                        <button class="btn btn-small" data-key="cars.btnDetails">جزئیات بیشتر</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="services.title">خدمات ما</h2>
+                <p class="section-desc" data-key="services.desc">خدمات کامل قبل و پس از فروش برای رضایت کامل مشتریان</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3 class="service-title" data-key="services.item1.title">گارانتی و خدمات پس از فروش</h3>
+                    <p class="service-desc" data-key="services.item1.desc">گارانتی معتبر ۳ ساله یا ۱۰۰,۰۰۰ کیلومتر برای کلیه خودروها</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title" data-key="services.item2.title">تعمیرات تخصصی</h3>
+                    <p class="service-desc" data-key="services.item2.desc">تعمیرات توسط متخصصین مجرب با استفاده از قطعات اصلی</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title" data-key="services.item3.title">بیمه خودرو</h3>
+                    <p class="service-desc" data-key="services.item3.desc">انعقاد انواع بیمه‌نامه‌های شخص ثالث و بدنه با تخفیف ویژه</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="service-title" data-key="services.item4.title">تسهیلات مالی</h3>
+                    <p class="service-desc" data-key="services.item4.desc">ارائه تسهیلات بانکی و شرایط پرداخت اقساطی ویژه</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" data-key="about.title">درباره نمایندگی ماموت خودرو کرمانشاه</h2>
+                    <p class="about-desc" data-key="about.desc1">نمایندگی رسمی ماموت خودرو در کرمانشاه با بیش از ۱۵ سال سابقه درخشان در زمینه فروش و خدمات پس از فروش خودروهای ماموت در غرب کشور فعالیت می‌کند.</p>
+                    <p class="about-desc" data-key="about.desc2">ما با تکیه بر تیمی متخصص و مجرب، همواره تلاش کرده‌ایم تا با ارائه محصولات باکیفیت و خدمات متمایز، رضایت کامل مشتریان را جلب نماییم.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-key="about.feature1">۱۵ سال سابقه درخشان</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-key="about.feature2">بیش از ۵۰۰۰ مشتری راضی</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-key="about.feature3">نمایندگی رسمی ماموت خودرو</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-key="about.feature4">پشتیبانی ۲۴ ساعته</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="assets/IMG_8296.JPG" alt="تصویر نمایندگی ماموت خودرو">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-key="contact.title">تماس با ما</h2>
+                <p class="section-desc" data-key="contact.desc">برای دریافت اطلاعات بیشتر یا مشاوره رایگان با ما در تماس باشید</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-key="contact.address.title">آدرس</h3>
+                            <p data-key="contact.address.value">کرمانشاه، بلوار شهید بهشتی، بین ۲۲ بهمن و کشاورز، نمایندگی ماموت خودرو</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-key="contact.phone.title">تلفن</h3>
+                            <p>۰۸۳-۳۴۲۱-۵۶۷۸</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-key="contact.email.title">ایمیل</h3>
+                            <p>info@mammutkhodro-kermanshah.ir</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-key="contact.hours.title">ساعات کاری</h3>
+                            <p data-key="contact.hours.value">شنبه تا چهارشنبه: ۸:۳۰ الی ۱۸:۰۰<br>پنجشنبه: ۸:۳۰ الی ۱۴:۰۰</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <h3 data-key="contact.form.title">ارسال پیام</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="نام و نام خانوادگی" required data-key="contact.form.name">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="شماره تماس" required data-key="contact.form.phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="آدرس ایمیل" data-key="contact.form.email">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="متن پیام شما" required data-key="contact.form.message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-key="contact.form.submit">ارسال پیام</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3 class="logo-title">ماموت خودرو</h3>
+                            <p class="logo-subtitle">نمایندگی کرمانشاه</p>
+                        </div>
+                    </div>
+                    <p class="footer-desc" data-key="footer.desc">نمایندگی رسمی ماموت خودرو در کرمانشاه، ارائه دهنده خودروهای باکیفیت با خدمات پس از فروش بی‌نظیر</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-key="footer.links.title">لینک‌های سریع</h4>
+                    <ul>
+                        <li><a href="#home" data-key="nav.home">خانه</a></li>
+                        <li><a href="#cars" data-key="nav.cars">خودروها</a></li>
+                        <li><a href="#services" data-key="nav.services">خدمات</a></li>
+                        <li><a href="#about" data-key="nav.about">درباره ما</a></li>
+                        <li><a href="#contact" data-key="nav.contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 data-key="footer.contact.title">اطلاعات تماس</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-key="contact.address.value">کرمانشاه، بلوار شهید بهشتی، بین ۲۲ بهمن و کشاورز</span></p>
+                    <p><i class="fas fa-phone"></i> ۰۸۳-۳۴۲۱-۵۶۷۸</p>
+                    <p><i class="fas fa-envelope"></i> info@mammutkhodro-kermanshah.ir</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-key="footer.copyright">© ۱۴۰۲ کلیه حقوق برای نمایندگی ماموت خودرو کرمانشاه محفوظ است.</p>
+                <div class="footer-bottom-actions">
+                    <button id="theme-toggle-footer" class="theme-toggle small" aria-label="تغییر حالت رنگ">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <div class="language-switcher small">
+                        <button id="lang-fa-footer" class="lang-btn active" data-lang="fa">فارسی</button>
+                        <button id="lang-en-footer" class="lang-btn" data-lang="en">English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
